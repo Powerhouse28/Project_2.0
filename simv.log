@@ -1,0 +1,123 @@
+Command: /courses/engr850/engr850-29/verilog-review/project/test4/project1/./simv -l simv.log +ntb_random_seed=1
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP1_Full64; Runtime version O-2018.09-SP1_Full64;  May 15 17:17 2023
+VCD+ Writer O-2018.09-SP1_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+yup
+yup23
+resetting
+done resetting
+Generator
+Data in:	7d
+Data in:	c6
+Data in:	8f
+Data in:	9f
+Data in:	47
+Data in:	cf
+Data in:	f4
+Data in:	bc
+Data in:	04
+Data in:	d7
+Driving the output
+data_in = 7d	Write: 0	 Read: 1
+Driving the output
+data_in = c6	Write: 1	 Read: 0
+Driving the output
+data_in = 8f	Write: 1	 Read: 0
+Driving the output
+data_in = 9f	Write: 1	 Read: 0
+Driving the output
+data_in = 47	Write: 0	 Read: 1
+Driving the output
+data_in = cf	Write: 0	 Read: 1
+Driving the output
+data_in = f4	Write: 1	 Read: 0
+Driving the output
+data_in = bc	Write: 1	 Read: 0
+Driving the output
+data_in = 04	Write: 0	 Read: 1
+Driving the output
+data_in = d7	Write: 1	 Read: 0
+Finished driving
+Monitor
+Write En: 1	FIFO Output: d7
+Read En: 1	FIFO Output: 00
+Read En: 1	FIFO Output: 7d
+Read En: 1	FIFO Output: c6
+Read En: 1	FIFO Output: 8f
+Read En: 1	FIFO Output: 9f
+Read En: 1	FIFO Output: 47
+Read En: 1	FIFO Output: cf
+Read En: 1	FIFO Output: f4
+Read En: 1	FIFO Output: f4
+yup2
+Write enable:1
+Read enable:0 1
+nop
+Read pointer 1
+210 Output is 00 and is as expected Success
+yup2
+Write enable:0
+Write pointer 1
+Read enable:1 0
+210 Output is 00 and is as expected Success
+yup2
+Write enable:0
+Write pointer 2
+Read enable:1 0
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+yup2
+Write enable:0
+Write pointer 3
+Read enable:1 0
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+yup2
+Write enable:0
+Write pointer 4
+Read enable:1 1
+yup3
+Read pointer 2
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+yup2
+Write enable:0
+Write pointer 5
+Read enable:1 1
+yup3
+Read pointer 3
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+yup2
+Write enable:0
+Write pointer 6
+Read enable:1 0
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+yup2
+Write enable:0
+Write pointer 7
+Read enable:1 0
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+yup2
+Write enable:0
+Write pointer 0
+Read enable:1 1
+yup3
+Read pointer 4
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+yup2
+Write enable:0
+Write pointer 1
+Read enable:1 0
+"./scoreboard.sv", 63: $unit::\scoreboard#(8,8)::main .unnamed$$_0: started at 210s failed at 210s
+	Offending '(this.trans_score_out.data_out == this.trans_score_in.data_out)'
+$finish called from file "./environment.sv", line 55.
+$finish at simulation time                  210
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 210
+CPU Time:      0.400 seconds;       Data structure size:   0.0Mb
+Mon May 15 17:17:45 2023
