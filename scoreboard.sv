@@ -41,14 +41,14 @@ mailbox mon2scb, drv2scr;
       drv2scr.get(this.trans_score_in);
       cov.sample();
 
-	   $display("\t trans_score_in : %h  %h\n",trans_score_in.data_out, trans_score_in.data_in);
+	   $display("\t trans_score_in : OUT - %h , IN - %h\n",trans_score_in.data_out, trans_score_in.data_in);
       if(!trans_score_in.wr_en) begin
      fifo[w_ptr] = trans_score_in.data_in;
       w_ptr++;
      // $display("Write pointer %h",w_ptr);
     end  
 
-	   $display("\t trans_score_out : %h  %h\n",trans_score_out.data_out, trans_score_out.data_in);
+	   $display("\t trans_score_out : OUT - %h , IN - %h\n",trans_score_out.data_out, trans_score_out.data_in);
     if(trans_score_out.rd_en)begin
       if(trans_score_out.data_out == fifo[r_ptr])begin
         //r_ptr++;
