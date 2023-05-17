@@ -24,7 +24,7 @@ endfunction
      //trans_mon.data_in = `MONITOR_IF.data_in;
      trans_mon.full = `MONITOR_IF.full;
      trans_mon.empty = `MONITOR_IF.empty;
-     $display("Write En: %h\tFIFO Output: %h",`MONITOR_IF.wr_en, `MONITOR_IF.data_in);
+  //   $display("Write En: %h\tFIFO Output: %h",`MONITOR_IF.wr_en, `MONITOR_IF.data_in);
   //   end
 
  //   if(`MONITOR_IF.rd_en) begin
@@ -33,7 +33,7 @@ endfunction
   //   trans_mon.full = `MONITOR_IF.full;
   //   trans_mon.empty = `MONITOR_IF.empty;
 
-	$display("Read En: %h\tFIFO Output: %h",`MONITOR_IF.rd_en, `MONITOR_IF.data_out);
+	  $display(" En: %h, %h \tFIFO Output: %h",`MONITOR_IF.rd_en, `MONITOR_IF.wr_en, `MONITOR_IF.data_out);
 //  end 
   mon2scb.put(trans_mon);
  end  
