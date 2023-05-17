@@ -45,7 +45,7 @@ mailbox mon2scb, drv2scr;
       if(!trans_score_in.wr_en) begin
      fifo[w_ptr] = trans_score_in.data_in;
       w_ptr++;
-      $display("Write pointer %h",w_ptr);
+     // $display("Write pointer %h",w_ptr);
     end  
 
     $display("Read enable:%h %h",trans_score_in.rd_en,trans_score_out.rd_en);
@@ -58,7 +58,7 @@ mailbox mon2scb, drv2scr;
         $display("nop");
       end
       r_ptr++;
-      $display("Read pointer %h",r_ptr);
+      //$display("Read pointer %h",r_ptr);
     end
     assert (trans_score_out.data_out == trans_score_in.data_out) $display ("%0t Output is %h and is as expected Success",$time, trans_score_out.data_out);
     //else $error("%t Output is wrong, Failed",$time);
