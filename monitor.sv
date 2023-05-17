@@ -22,8 +22,8 @@ endfunction
   //  if(`MONITOR_IF.wr_en) begin
     // trans_mon.wr_en = `MONITOR_IF.wr_en ;
      //trans_mon.data_in = `MONITOR_IF.data_in;
-     trans_mon.full = `MONITOR_IF.full;
-     trans_mon.empty = `MONITOR_IF.empty;
+     //trans_mon.full = `MONITOR_IF.full;
+    // trans_mon.empty = `MONITOR_IF.empty;
   //   $display("Write En: %h\tFIFO Output: %h",`MONITOR_IF.wr_en, `MONITOR_IF.data_in);
   //   end
 
