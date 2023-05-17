@@ -36,7 +36,7 @@ class driver;
      `DRIVER_IF.wr_en <= tr.wr_en;
      `DRIVER_IF.rd_en <= tr.rd_en;
 
-     @(negedge vif_fifo.clk);
+   //  @(negedge vif_fifo.clk);
     // `DRIVER_IF.wr_en <= 0;
     // `DRIVER_IF.rd_en <= 1;
      drv2scr.put(tr);
